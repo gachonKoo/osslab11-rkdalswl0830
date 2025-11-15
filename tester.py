@@ -1,9 +1,11 @@
-from geo import add, sub
+import geo.utils as utils
 
-def main():
-    print(add(3, 5))
-    print(sub(10, 4))
+# calculate the length of hypotenuse(c) when a=3, b=4
+a, b = 3, 4
+c = utils.pythagoras(a, b)
+print('c =', c)
 
-if __name__ == "__main__":
-    main()
-
+# calculate the area of circle with radius r = 10
+r = 10
+area = utils.circle(r)
+print('area =', area)
